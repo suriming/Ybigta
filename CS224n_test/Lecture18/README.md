@@ -93,11 +93,11 @@ Parsing a sentence with an RNN(greedily)
     
     forward propagation시에 parent node가 다음과 같이 2개 children node로 계산되므로
     
-    ![](assets/스크린샷_2022-02-17_오후_3.03.19.png)
+    ![](assets/Untitled13.png)
     
     back propagation시에 다음과 같이 각각에 대해 split해야 한다.
     
-    ![](assets/스크린샷_2022-02-17_오후_3.03.51.png)
+    ![](assets/Untitled14.png)
     
 
 Discussion: Simple TreeRNN
@@ -115,7 +115,7 @@ Syntatically-United RNN (SU-RNN)
     
     즉 이전처럼 한 개의 universal한 matrix를 사용하는 것이 아니라, 컴포지션의 카테고리별로 다른 matrix를 사용한다.
     
-    ![](assets/스크린샷_2022-02-17_오후_4.20.20.png)
+    ![](assets/Untitled15.png)
     
 - Compositional Vector Grammar (CVG)
     
@@ -141,11 +141,11 @@ Compositionality Through Recursive Matrix-Vector Spaces (MV-RNN)
     이를 반영하기 위해 오른쪽과 같은 새로운 composition function이 제시되었다. 
     
 
-![](assets/스크린샷_2022-02-17_오후_5.05.32.png)
+![](assets/Untitled16.png)
 
 - 미리 어떤 것이  operator인지 정하지 않고, 모든 단어와 구가 vector meaning과 matrix meaning을 가진다고 정한다.
     
-    ![](assets/스크린샷_2022-02-17_오후_5.39.16.png)
+    ![](assets/Untitled17.png)
     
     기존의 모델들과 마찬가지로 vector는 벡터끼리 concat되어 parent 노드의 벡터를 만들게 되고, matrix들은 concat되어 이를 처리하는 matrix와 곱해져 parent 노드의 matrix을 만들게 된다.
     
@@ -171,7 +171,7 @@ Recursive Neural Tensor Network
 
 - 그렇지만 여전히 해결되지 않은  문제를 위해 neural tensor을 사용한 모델이 고안되었다.
     
-    ![](assets/스크린샷_2022-02-17_오후_7.32.59.png)
+    ![](assets/Untitled18.png)
     
 - 두 벡터의 interaction 사이에 기존의 matrix 가 아닌 3d tensor를 사용해서 연산한다.
 - 감정분석에서 반어법(negating negatives) 을 잘 반영한다

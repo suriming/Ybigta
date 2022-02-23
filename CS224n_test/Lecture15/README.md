@@ -97,7 +97,7 @@ Pre-neural Summarization
 
 Summarization: ROUGE
 
-![Untitled](assets/Untitled4.png.png)
+![Untitled](assets/Untitled4.png)
 
 BLUE와 유사한 n-gram overlap에 기반하고 있다.
 
@@ -109,7 +109,7 @@ BLUE와 유사한 n-gram overlap에 기반하고 있다.
     recall/precision
     
 
-![Untitled](assets/Untitled5.png.png)
+![Untitled](assets/Untitled5.png)
 
 ![Untitled](assets/Untitled6.png)
 
